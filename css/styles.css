@@ -27,6 +27,28 @@ body {
   position: absolute;
   bottom: 0px;
   background-color: rgb(255, 255, 255);
+  color: rgb(54, 82, 157);
+  font-size: 0.8rem;
+}
+
+.fb_languages {
+  margin-top: 1rem;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.fb_services {
+  margin-bottom: 1rem;
+}
+
+#fb_footer a {
+  text-decoration: none;
+  color: rgb(54, 82, 157);
+  padding-left: 1rem;
+}
+
+#fb_footer a:hover {
+  text-decoration: underline;
+  color: rgb(54, 82, 157);
 }
 
 .commons {
@@ -45,4 +67,20 @@ body {
 .inputs {
   height: 20px;
   width: 100px;
+}
+
+.fb_links {
+  text-decoration: none;
+  color: rgb(153, 178, 220);
+}
+.fb_links:hover {
+  text-decoration: underline;
+  color: rgb(153, 178, 220);
+}
+
+.btn_lang {
+  font-weight: bold;
+  color: rgb(115, 115, 115);
+  height: 1.2rem;
+  margin-left: 1rem;
 }
