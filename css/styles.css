@@ -1,0 +1,36 @@
+/* This is the custom css form my project */
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(226, 229, 241);
+}
+
+#fb_header {
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(57, 83, 157);
+}
+
+#fb_main {
+  height: 75vh;
+  width: 100vw;
+  position: absolute;
+  top: 10vh;
+}
+
+#fb_footer {
+  height: 15vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.commons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
