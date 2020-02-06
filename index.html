@@ -35,7 +35,64 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row" id="fb_header"></div>
+      <div class="row commons" id="fb_header">
+        <div class="col-md-8">
+          <img
+            src="/images/facebook_white.png"
+            alt="facebook logo"
+            title="facebook"
+            height="30px"
+          />
+        </div>
+        <div class="col-md-4 commons">
+          <form>
+            <div class="form-row commons">
+              <div class="col">
+                <label for="useremail" style="font-size: 0.7rem; color: white;"
+                  >Email or phone</label
+                >
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="useremail"
+                />
+                <small
+                  id="emailHelp"
+                  class="form-text text-muted"
+                  style="color: rgb(153, 178, 220); height: 0.6rem;"
+                ></small>
+              </div>
+              <div class="col">
+                <label
+                  for="userpassword"
+                  style="font-size: 0.7rem; color: white;"
+                  >Password</label
+                >
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="userpassword"
+                />
+                <small
+                  id="emailHelp"
+                  class="form-text"
+                  style="font-size: 0.6rem; height: 0.6rem; color: rgb(153, 178, 220);"
+                  >Forgotten account?</small
+                >
+              </div>
+              <div class="col commons" style="height: 100%;">
+                <button
+                  type="submit"
+                  class="btn btn-primary commons"
+                  id="btn-login"
+                >
+                  Log In
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
       <div class="row" id="fb_main"></div>
       <div class="row" id="fb_footer"></div>
     </div>
