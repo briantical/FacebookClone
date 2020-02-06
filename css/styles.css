@@ -84,3 +84,9 @@ body {
   height: 1.2rem;
   margin-left: 1rem;
 }
+
+#fb_connect {
+  color: rgb(2, 53, 99);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
