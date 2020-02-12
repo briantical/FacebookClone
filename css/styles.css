@@ -90,3 +90,55 @@ body {
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+#fb_create {
+  color: rgb(28, 30, 33);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.fb_form {
+  color: rgb(98, 105, 115);
+  font-size: 0.8rem;
+  padding-right: 10rem;
+}
+
+.fb_form a {
+  color: rgb(54, 82, 157);
+}
+
+#btn_signup {
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid rgb(17, 166, 23);
+  background-color: rgb(17, 166, 23);
+  width: 10rem;
+}
+
+#fb_createpage {
+  color: rgb(28, 30, 33);
+  font-size: 0.9rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+
+#fb_createpage_link {
+  font-weight: bold;
+  color: rgb(28, 30, 33);
+  padding-left: 1rem;
+}
+
+.random_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+
+.fb_labels {
+  font-weight: 500;
+}

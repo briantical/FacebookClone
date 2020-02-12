@@ -97,9 +97,9 @@
 
       <!-- Facebook Content -->
       <div class="row" id="fb_main">
-        <div class="col-md-8">
-          <div class="col-md-3"></div>
-          <div class="col-md-9">
+        <!-- Fcaebook connnect information -->
+        <div class="col-md-7 random_content">
+          <div>
             <div id="fb_connect">
               Facebook helps you connect and share with <br />
               people in your life.
@@ -113,10 +113,13 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div>Create an account</div>
-          <div>It's quick and easy</div>
+        <!-- This is the form section of signing up -->
+        <div class="col-md-5 fb_form">
+          <div id="fb_create">Create an account</div>
+          <div class="fb_labels">It's quick and easy</div>
+
           <form>
+            <!-- This is the name row -->
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input
@@ -135,6 +138,7 @@
                 />
               </div>
             </div>
+            <!-- This is the email field-->
             <div class="form-group">
               <input
                 type="text"
@@ -143,6 +147,7 @@
                 placeholder="Mobile number or email address"
               />
             </div>
+            <!-- This is the password field -->
             <div class="form-group">
               <input
                 type="password"
@@ -151,87 +156,86 @@
                 placeholder="New password"
               />
             </div>
-            <div class="form-row">
-              <label></label>
-              <div class="form-group col-md-4">
-                <label for="inputState">Birthday</label>
-                <div class="row">
-                  <select id="inputState">
-                    <option selected>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                  </select>
+            <!-- This is the date field -->
+            <div class="form-group">
+              <label for="birthday" class="fb_labels">Birthday ?</label>
+              <div class="row">
+                <select id="birthday">
+                  <option selected>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
 
-                  <select id="inputState">
-                    <option>Jan</option>
-                    <option selected>Feb</option>
-                    <option>Mar</option>
-                    <option>Apr</option>
-                    <option>May</option>
-                  </select>
+                <select id="birthday">
+                  <option>Jan</option>
+                  <option selected>Feb</option>
+                  <option>Mar</option>
+                  <option>Apr</option>
+                  <option>May</option>
+                </select>
 
-                  <select id="inputState">
-                    <option>2018</option>
-                    <option>2019</option>
-                    <option selected>2020</option>
-                    <option>2021</option>
-                    <option>2022</option>
-                    <option>2023</option>
-                  </select>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="inlineRadioOptions"
-                    id="inlineRadio1"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="inlineRadio1"
-                    >Female</label
-                  >
-                </div>
-                <div
-                  class="form-check form-check-inline"
-                  style="display: flex; flex-direction: row;"
-                >
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="inlineRadioOptions"
-                    id="inlineRadio2"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="inlineRadio2"
-                    >Male</label
-                  >
-                </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="inlineRadioOptions"
-                    id="inlineRadio3"
-                    value="option3"
-                  />
-                  <label class="form-check-label" for="inlineRadio3"
-                    >Custom</label
-                  >
-                </div>
+                <select id="birthday">
+                  <option>2018</option>
+                  <option>2019</option>
+                  <option selected>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                  <option>2023</option>
+                </select>
               </div>
             </div>
-            <div>
-              By clicking Sign Up, you agree to our Terms, Data Policy and
-              Cookie Policy. You may receive SMS notifications from us and can
-              opt out at any time.
+            <!-- This the gender field -->
+            <div class="form-group">
+              <label for="gender" class="fb_labels">Gender ?</label>
+              <div class="form-check form-check-inline row">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="female"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >Female</label
+                >
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="male"
+                />
+                <label class="form-check-label" for="inlineRadio2">Male</label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="custom"
+                />
+                <label class="form-check-label" for="inlineRadio3"
+                  >Custom</label
+                >
+              </div>
             </div>
-
-            <button type="submit" class="btn btn-primary">Sign up</button>
-
-            <div>Create a Page for a celebrity, band or business.</div>
+            <!-- This is the disclaimer -->
+            <div>
+              By clicking Sign Up, you agree to our <a href="#">Terms</a>,
+              <a href="#">Data Policy</a> and <a href="#">Cookie Policy</a>. You
+              may receive SMS notifications from us and can opt out at any time.
+            </div>
+            <!-- This is the signup button -->
+            <button type="submit" class="btn btn-primary" id="btn_signup">
+              Sign up
+            </button>
           </form>
+
+          <div id="fb_createpage">
+            <a href="#" id="fb_createpage_link">Create a Page </a> for a
+            celebrity, band or business.
+          </div>
         </div>
       </div>
 
