@@ -4,18 +4,17 @@ body {
   padding: 0px;
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(226, 229, 241, 0),
-    rgba(226, 229, 241, 1)
-  );
 }
 
 #fb_header {
   height: 10vh;
   width: 100vw;
-  background-color: rgb(57, 83, 157);
   border-bottom: 1px solid rgb(38, 68, 129);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(72, 88, 131, 0.9),
+    rgba(38, 68, 129, 1)
+  );
 }
 
 #fb_main {
@@ -23,6 +22,11 @@ body {
   width: 100vw;
   position: absolute;
   top: 10vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(226, 229, 241, 0),
+    rgba(226, 229, 241, 1)
+  );
 }
 
 #fb_footer {
@@ -87,7 +91,7 @@ body {
 .btn_lang {
   font-weight: bold;
   color: rgb(115, 115, 115);
-  height: 1.2rem;
+  border-radius: 0.2rem;
   margin-left: 1rem;
 }
 
@@ -121,10 +125,12 @@ body {
 #btn_signup {
   color: #fff;
   font-weight: bold;
-  border: 1px solid rgb(35, 115, 21);
   width: 10rem;
   margin-top: 1rem;
-  background-color: rgba(69, 144, 60, 1);
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
 }
 
 #fb_createpage {
@@ -168,4 +174,16 @@ body {
 
 .fb_headers {
   color: black;
+}
+
+#fb_home {
+  padding-left: 17rem;
+}
+
+#fb_login_form {
+  padding-right: 0rem;
+}
+
+.genders {
+  font-weight: bold;
 }
