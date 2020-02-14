@@ -42,56 +42,43 @@
           <img
             src="/images/facebook_white.png"
             alt="facebook logo"
-            title="facebook"
+            title="Go to Facebook home"
             height="30px"
           />
         </div>
         <div class="col-md-4 commons">
-          <form>
-            <div class="form-row commons">
-              <div class="col">
-                <label for="useremail" style="font-size: 0.7rem; color: white;"
-                  >Email or phone</label
-                >
-                <input
-                  type="text"
-                  class="form-control form-control-sm"
-                  id="useremail"
-                />
-                <small
-                  id="emailHelp"
-                  class="form-text text-muted"
-                  style="color: rgb(153, 178, 220); height: 0.6rem;"
-                ></small>
-              </div>
-              <div class="col">
-                <label
-                  for="userpassword"
-                  style="font-size: 0.7rem; color: white;"
-                  >Password</label
-                >
-                <input
-                  type="text"
-                  class="form-control form-control-sm"
-                  id="userpassword"
-                />
-                <small
-                  id="emailHelp"
-                  class="form-text"
-                  style="font-size: 0.6rem; height: 0.6rem; color: rgb(153, 178, 220);"
-                  ><a href="#" class="fb_links">Forgotten account?</a></small
-                >
-              </div>
-              <div class="col commons" style="height: 100%;">
-                <button
-                  type="submit"
-                  class="btn btn-primary commons"
-                  id="btn-login"
-                >
-                  Log In
-                </button>
-              </div>
-            </div>
+          <form action="" id="fb_form_one">
+            <table id="fb_table_one">
+              <tr>
+                <td>Email or Phone</td>
+                <td>Password</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="email"
+                    name="useremail"
+                    id="useremail"
+                    autocomplete="off"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="password"
+                    name="userpassword"
+                    id="userpassword"
+                    autocomplete="off"
+                  />
+                </td>
+                <td><button type="submit" id="btn-login">Log in</button></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="">Forgotten account ?</a></td>
+                <td></td>
+              </tr>
+            </table>
           </form>
         </div>
       </div>
@@ -117,7 +104,7 @@
         <!-- This is the form section of signing up -->
         <div class="col-md-5 fb_form">
           <div id="fb_create">Create an account</div>
-          <div class="fb_labels">It's quick and easy</div>
+          <div class="fb_labels fb_headers">It's quick and easy</div>
 
           <form>
             <!-- This is the name row -->
@@ -128,6 +115,7 @@
                   class="form-control"
                   id="firstname"
                   placeholder="First name"
+                  autocomplete="off"
                 />
               </div>
               <div class="form-group col-md-6">
@@ -136,6 +124,7 @@
                   class="form-control"
                   id="surname"
                   placeholder="Surname"
+                  autocomplete="off"
                 />
               </div>
             </div>
@@ -146,6 +135,7 @@
                 class="form-control"
                 id="contact"
                 placeholder="Mobile number or email address"
+                autocomplete="off"
               />
             </div>
             <!-- This is the password field -->
@@ -155,12 +145,13 @@
                 class="form-control"
                 id="password"
                 placeholder="New password"
+                autocomplete="off"
               />
             </div>
             <!-- This is the date field -->
             <div class="form-group">
-              <label for="birthday" class="fb_labels">Birthday ?</label>
-              <div class="row">
+              <label for="birthday" class="fb_labels">Birthday</label>
+              <div>
                 <select id="birthday">
                   <option selected>6</option>
                   <option>7</option>
@@ -185,40 +176,56 @@
                   <option>2022</option>
                   <option>2023</option>
                 </select>
+                <a href=""
+                  ><img
+                    src="/images/help.png"
+                    alt="help"
+                    style="height: 0.9rem;"
+                    title="click for more information"
+                /></a>
               </div>
             </div>
             <!-- This the gender field -->
             <div class="form-group">
-              <label for="gender" class="fb_labels">Gender ?</label>
-              <div class="form-check form-check-inline row">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio1"
-                  value="female"
-                />
-                <label class="form-check-label" for="inlineRadio1"
-                  >Female</label
-                >
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio2"
-                  value="male"
-                />
-                <label class="form-check-label" for="inlineRadio2">Male</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio3"
-                  value="custom"
-                />
-                <label class="form-check-label" for="inlineRadio3"
-                  >Custom</label
-                >
+              <label for="gender" class="fb_labels">Gender</label><br />
+              <div class="form-check-inline form-group">
+                <div>
+                  <label class="form-check-label" for="female">Female</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                  />
+                </div>
+                <div>
+                  <label class="form-check-label" for="male">Male</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="male"
+                  />
+                </div>
+                <div>
+                  <label class="form-check-label" for="custom">Custom</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="custom"
+                    value="custom"
+                  />
+                </div>
+                <a href=""
+                  ><img
+                    src="/images/help.png"
+                    alt="help"
+                    style="height: 0.9rem;"
+                    title="click for more information"
+                /></a>
               </div>
             </div>
             <!-- This is the disclaimer -->
@@ -234,8 +241,10 @@
           </form>
 
           <div id="fb_createpage">
-            <a href="#" id="fb_createpage_link">Create a Page </a> for a
-            celebrity, band or business.
+            <span
+              ><a href="#" id="fb_createpage_link">Create a Page</a> for a
+              celebrity, band or business.</span
+            >
           </div>
         </div>
       </div>
