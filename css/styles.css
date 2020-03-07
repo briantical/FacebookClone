@@ -134,7 +134,6 @@ body {
 }
 
 #fb_createpage {
-  color: rgb(28, 30, 33);
   font-size: 0.9rem;
   font-weight: bold;
   width: 100%;
@@ -185,5 +184,7 @@ body {
 }
 
 .genders {
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 0.9rem;
+  color: rgb(28, 30, 33);
 }
